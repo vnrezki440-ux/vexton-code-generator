@@ -1,0 +1,6 @@
+{
+  "name": "VEXTON VPN CODE GENERATOR",
+  "description": "Административная панель VEXTON VPN для пошагового создания записей VPN-кодов, управления реальными конфигурациями и проверки доступности серверов.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
