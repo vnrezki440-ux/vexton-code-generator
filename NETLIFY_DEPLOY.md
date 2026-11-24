@@ -50,7 +50,7 @@ Netlify Blobs подключается **автоматически** и бес�
 1. Распакуйте `vexton-vpn-netlify-ready.zip` и загрузите файлы в приватный репозиторий GitHub.
 2. Войдите на [app.netlify.com](https://app.netlify.com) → **Add new site → Import an existing project → GitHub**.
 3. Выберите свой репозиторий. Параметры подтянутся автоматически из `netlify.toml`:
-   - **Build command:** `npm run build`
+   - **Build command:** задана в `netlify.toml`: если Vite не установлен, сначала выполняется `npm ci`, затем `npm run build`.
    - **Publish directory:** `dist`
    - **Functions directory:** `netlify/functions`
 4. Перед нажатием **Deploy site** откройте **Environment variables** и добавьте переменные из таблицы выше (`VEXTON_ADMIN_USER`, `VEXTON_ADMIN_PASSWORD`, `VEXTON_SECURITY_KEY`, `VEXTON_SESSION_SECRET`).
@@ -65,7 +65,7 @@ Netlify Blobs подключается **автоматически** и бес�
 
 ```bash
 # 1. Распакуйте vexton-vpn-netlify-ready.zip и перейдите в папку проекта
-npm install
+npm ci
 
 # 2. Установите Netlify CLI (если ещё не установлен) и войдите в аккаунт
 npm install -g netlify-cli
