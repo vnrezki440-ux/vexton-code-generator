@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#07040F"/>
+  <defs>
+    <linearGradient id="vextonGrad" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 10L14 17.5V31.2C14 42.3 21.7 52.3 32 55C42.3 52.3 50 42.3 50 31.2V17.5L32 10Z" fill="url(#vextonGrad)"/>
+  <path d="M24 27L32 39L40 27" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
